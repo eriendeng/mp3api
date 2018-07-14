@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+  <view class="recommend_hot_box" wx:for="{{hotList}}">
+    <image src="{{item.song_pic}}" id="{{item.mid}}" class="recommend_hot_image"></image>
+  </view>
+</scroll-view>
+<view class='colorboxg1'></view>
+<view class='colorboxg'></view>
+<view class='colorboxg2'></view>
+
+<view class="article_comment" bindtap='drawer' animation="{{animationData}}">
+      <view class="comment_text">{{showLyricst}}</view>
+      <view class="comment_text">{{showLyricnd}}</view>
+      <view class="comment_text">{{showLyricrd}}</view>
+</view>
+
+<view class='colorboxg1-2'></view>
+<view class='colorboxg-2'></view>
+<view class='colorboxg2-2'></view>
+
+<view class='recommend_scroll_y_box-bg'></view>
+<scroll-view class="recommend_scroll_y_box" scroll-y="true">
+  <view class="article_box" wx:for="{{articleList}}" id="{{index}}"  bindtap='toDetail'>
+    <view class="article_index">{{index+1}}</view>
+    <view class="article_content">
+      <view class="article_name">{{item.song_name}}</view>
+      <view class="article_author">{{item.song_author}}</view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class='colorboxg1-3'></view>
+<view class='colorboxg-3'></view>
+<view class='colorboxg2-3'></view>
+
+<view class="music_player">
+  <image class="player_button" src="{{playIcon}}" bindtap='playerHandler'></image>
+  <view class="player_title">{{name}} {{author}}</view>
+  <scroll-view class='player_lrc' scroll-x="true">
+    <view class='player_lrc'>{{lyric}}</view>
+  </scroll-view>
+  <view class="player_time">{{curTimeVal}}/{{duration}}</view>
+</view>

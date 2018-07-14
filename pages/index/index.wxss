@@ -1,0 +1,223 @@
+/**index.wxss**/
+.recommend_scroll_x_box {
+  position: absolute;
+  left: 3vw;
+  width: 94vw;
+  height: 350rpx;
+  margin-top: 3vw;
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+  z-index: 10;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.colorboxg1 {
+  position: absolute;
+  top: 25vw;
+  width: 100vw;
+  height: 3vw;
+  background-color: rgba(67, 205, 128, 0.9)
+}
+.colorboxg {
+  position: absolute;
+  top: 28vw;
+  width: 100vw;
+  height: 3vw;
+  background-color: gainsboro;
+}
+.colorboxg2 {
+  position: absolute;
+  top: 31vw;
+  width: 100vw;
+  height: 3vw;
+  background-color: rgba(67, 205, 128, 0.9)
+}
+.colorboxg1-2 {
+  position: absolute;
+  top: 55vw;
+  width: 40vw;
+  height: 3vw;
+  background-color: rgba(67, 205, 128, 0.9)
+}
+.colorboxg-2 {
+  position: absolute;
+  top: 58vw;
+  width: 40vw;
+  height: 3vw;
+  background-color: gainsboro;
+}
+.colorboxg2-2 {
+  position: absolute;
+  top: 61vw;
+  width: 40vw;
+  height: 3vw;
+  background-color: rgba(67, 205, 128, 0.9)
+}
+.colorboxg1-3 {
+  position: fixed;
+  top: 95vw;
+  width: 15vw;
+  height: 3vw;
+  background-color: rgba(67, 205, 128, 0.9)
+}
+.colorboxg-3 {
+  position: fixed;
+  top: 98vw;
+  width: 15vw;
+  height: 3vw;
+  background-color: gainsboro;
+}
+.colorboxg2-3 {
+  position: fixed;
+  top: 101vw;
+  width: 15vw;
+  height: 3vw;
+  background-color: rgba(67, 205, 128, 0.9)
+}
+.recommend_hot_box {
+  width: 400rpx;
+  height: 350rpx;
+  margin-right: 24rpx;
+  display: inline-block;
+}
+
+.recommend_hot_image {
+  width: 350rpx;
+  height: 350rpx;
+}
+
+.recommend_scroll_y_box {
+  border: 1.5px solid black;
+  position: absolute;
+  top: 70vw;
+  width: 99%;
+  height: 100vw;
+  overflow: hidden;
+  margin-bottom: 20vw;
+  z-index: 10;
+  border-radius: 10rpx;
+}
+.recommend_scroll_y_box-bg {
+  border: 1.5px solid black;
+  position: absolute;
+  top: 70vw;
+  width: 99%;
+  height: 100vw;
+  overflow: hidden;
+  margin-bottom: 20vw;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10rpx;
+}
+.article_box {
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.article_index {
+  height: 120rpx;
+  width: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+	text-shadow:3px 3px 5px #000000;
+}
+
+.article_content {
+  height: 120rpx;
+  width: 100%;
+}
+
+.article_name {
+  margin-left: 40rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 15px;
+  font-weight: bold;
+}
+.article_author {
+  margin-left: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 12px;
+  color: grey;
+}
+.article_comment {
+  position: fixed;
+  top: 49vw;
+  right: 0;
+  height: 150rpx;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  border: 1.5px solid black;
+  border-radius: 10rpx;
+  background-color: rgba(0,0,0,0.5)
+}
+.comment_text {
+  line-height: 40rpx;
+  width: 50vw;
+  height: 40rpx;
+  font-size: 15px;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+  color: white;
+}
+
+.music_player {
+  position: fixed;
+  bottom: 0;
+  height: 110rpx;
+  width: 99%;
+  border: 1.5px solid green;
+  border-radius: 5px;
+  background-color: rgba(67, 205, 128, 0.9);
+  z-index: 11;
+}
+.player_button {
+  height: 110rpx;
+  width: 110rpx;
+}
+.player_time {
+  height: 50rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 20rpx;
+  line-height: 50rpx;
+}
+.player_lrc {
+  height: 50rpx;
+  position: fixed;
+  bottom: 10rpx;
+  left: 125rpx;
+  line-height: 50rpx;
+  color: white;
+  font-size: 12px;
+  width: 52vw;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+}
+.player_title {
+  height: 60rpx;
+  position: fixed;
+  bottom: 60rpx;
+  line-height: 75rpx;
+  left: 150rpx;
+  font-size: 15px;
+}
