@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+重写所有的静态资源，记住这个规则组要放到上面
+RewriteCond %{HTTP_HOST} ^erien.gz01.bdysite.com$ [NC]
+RewriteCond %{REQUEST_URI} ^(.*(\.css|\.js|\.woff2|\.woff|\.ttf))$
+L：最后一条规则 QSA：追加请求串（query string append）
+RewriteRule ^(.*)$ api/public/$1 [L,QSA]
+
+重写php请求
+NC :不区分大小写
+RewriteCond %{HTTP_HOST} ^erien.gz01.bdysite.com/$ [NC]如果当前的uri是api/public的话，直接就结束匹配
+RewriteCond %{REQUEST_URI} !^/api/public
+RewriteRule ^(.*)$ api/public/index.php?$1 [L,QSA]
+
+</IfModule>
